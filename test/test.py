@@ -1,7 +1,8 @@
 # SPDX-FileCopyrightText: © 2024 Tiny Tapeout
 # SPDX-License-Identifier: Apache-2.0
 
-import pytest
+import cocotb
 
-def test_pass():
-    assert True
+@cocotb.test()
+async def test_pass(dut):
+    dut._log.info("PASS")
