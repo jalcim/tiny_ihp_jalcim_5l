@@ -3,7 +3,7 @@ project:
   title:        "tiny_ihp_jalcim_5l"      # Project title
   author:       "jalcim"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "IHP SG13G2 1P SRAM 256x8 test wrapper with simple read/write interface"
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
