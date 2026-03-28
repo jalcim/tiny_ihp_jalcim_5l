@@ -37,7 +37,7 @@
       "instances": {
         "sram": {
           "location": [5, 5],
-          "orientation": "R0"
+          "orientation": "R90"
         }
       },
       "gds": [
