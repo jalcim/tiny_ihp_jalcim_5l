@@ -69,6 +69,7 @@ if { $::env(PDN_ENABLE_RAILS) == 1 } {
 }
 
 # SRAM macro grid: connect Metal4 (macro power pins) to TopMetal1 (PDN stripes)
+# Metal4 -> Metal5 -> TopMetal1 (layers are not adjacent, need intermediate)
 define_pdn_grid \
     -macro \
     -default \
@@ -78,4 +79,8 @@ define_pdn_grid \
 
 add_pdn_connect \
     -grid macro \
-    -layers "Metal4 $::env(PDN_VERTICAL_LAYER)"
+    -layers "Metal4 Metal5"
+
+add_pdn_connect \
+    -grid macro \
+    -layers "Metal5 $::env(PDN_VERTICAL_LAYER)"
